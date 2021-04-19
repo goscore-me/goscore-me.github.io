@@ -5,7 +5,7 @@ parameters:
   - name:
     content:
 content_markdown: |-
-  In this case the user of your application is redirected to your goscore Link URL. Once the goscore Link flow is completed, the user will be redirected to your specified **callback_url**, e.g. *https://my-doamin/oauth/callback*
+  In this case the user of your application is redirected to your goscore Link URL. Once the goscore Link flow is completed, the user will be redirected to your specified **callback_uri**, e.g. *https://my-doamin/oauth/callback*
 
 left_code_blocks:
   - code_block:

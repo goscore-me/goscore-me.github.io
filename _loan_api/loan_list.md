@@ -74,6 +74,7 @@ right_code_blocks:
             "current_balance": 349.0,
             "balance_with_interest": 0.0,
             "balance_without_interest": 349.0,
+            "terms": 59,
             "kid": "016470713880",
             "account": "42024603940"
           }

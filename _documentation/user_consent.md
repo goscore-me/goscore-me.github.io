@@ -21,9 +21,10 @@ content_markdown: |-
   | Parameter | Description | Required? |
   |-------|--------|---------|
   | client_id | you unique client ID | Yes |
+  | scope | collected data following the user consent, comma-separated. E.g. unsecured_loans,student_loan,e_invoices. All allowed options: vehicles, unsecured_loans, info, income, student_loan, e_invoices | Yes |
   | locale | language selectioin | No |
   | iframe | on-page integration | No |
-  | callback_url | redirect URL. This is the path that will receive the code. | No |
+  | callback_uri | redirect URL. This is the path that will receive the code. | No |
 
   #### Response
 
