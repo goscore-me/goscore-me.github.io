@@ -25,6 +25,15 @@ collections:
   invoice_api:
     title: Invoices
     position_number: 4
+  private_api:
+    title: User info
+    position_number: 5
+  income_api:
+    title: Income / employemnt
+    position_number: 6
+  vehicles_api:
+    title: Vehicles
+    position_number: 7
 
 plugins:
   - jekyll-sitemap

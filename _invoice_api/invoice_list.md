@@ -18,7 +18,7 @@ content_markdown: |-
 left_code_blocks:
   - code_block: |-
       var settings = {
-        "url": "https:/link.goscore.me/api/1.0/inovices/1",
+        "url": "https:/link.goscore.me/api/1.0/invoices/1",
         "method": "GET",
         "headers": {
           "Content-Type": "application/json"
@@ -33,7 +33,7 @@ left_code_blocks:
   - code_block: |-
       import requests
 
-      url = "https:/link.goscore.me/api/1.0/inovices/1"
+      url = "https:/link.goscore.me/api/1.0/invoices/1"
 
       payload = {}
       headers = {
@@ -50,7 +50,7 @@ left_code_blocks:
 
       var options = {
         'method': 'GET',
-        'url': 'https:/link.goscore.me/api/1.0/inovices/1',
+        'url': 'https:/link.goscore.me/api/1.0/invoices/1',
         'headers': {
           'Content-Type': 'application/json'
         }
@@ -63,7 +63,7 @@ left_code_blocks:
     title: Node.js
     language: javascript
   - code_block: |-
-      curl --location --request GET 'https:/link.goscore.me/api/1.0/inovices/1' \
+      curl --location --request GET 'https:/link.goscore.me/api/1.0/invoices/1' \
       --header 'Content-Type: application/json'
     title: Curl
     language: bash
