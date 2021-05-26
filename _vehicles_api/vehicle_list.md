@@ -7,13 +7,22 @@ content_markdown: |-
 
   List all vehicles registered on the costumer name from Statens Vegvesen
 
+  #### Vehicle information object parameters
+
+  | Parameter | Description | Required? |
+  |-------|--------|---------|
+  | vehicle_information | (array) list of the registered vehicles with plate numbers. First value is a vehicle name, second - plate number | No |
+
+  **NB!** Addional information is presented as is and isn't preprocessed. Please, consider that future changes in the schema will apply.
+
 left_code_blocks:
   - code_block: |-
       var settings = {
         "url": "https:/link.goscore.me/api/1.0/vehicles/1",
         "method": "GET",
         "headers": {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
+          "Authorization": "Bearer <insert your token here>"
         },
       };
 
@@ -29,7 +38,8 @@ left_code_blocks:
 
       payload = {}
       headers = {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer <insert your token here>'
       }
 
       response = requests.request("GET", url, headers=headers, data = payload)
@@ -44,7 +54,8 @@ left_code_blocks:
         'method': 'GET',
         'url': 'https:/link.goscore.me/api/1.0/vehicles/1',
         'headers': {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer <insert your token here>'
         }
       };
 
@@ -56,7 +67,7 @@ left_code_blocks:
     language: javascript
   - code_block: |-
       curl --location --request GET 'https:/link.goscore.me/api/1.0/vehicles/1' \
-      --header 'Content-Type: application/json'
+      --header 'Content-Type: application/json' --header 'Authorization: Bearer <insert your token here>'
     title: Curl
     language: bash
 

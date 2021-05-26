@@ -25,6 +25,7 @@ content_markdown: |-
   | locale | language selection. Available languages: **en, nb** | No |
   | iframe | on-page integration | No |
   | callback_uri | redirect URL. This is the path that will receive the code. | No |
+  | test | indicate if test flow is enabled (static data) | No |
 
   #### Response
 

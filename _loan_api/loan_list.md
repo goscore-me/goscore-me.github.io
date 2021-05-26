@@ -14,6 +14,29 @@ content_markdown: |-
   {: .info }
 
   Lists all the unsecured loans collected for the selected User ID. Read more above about how to get a valid token.
+
+  #### Loan object parameters
+
+  | Parameter | Description | Required? |
+  |-------|--------|---------|
+  | creditor_name | name of the financial institution | Yes |
+  | creditor_org_number | company ID from the public register | Yes |
+  | has_co_borrower | (boolean) is this loan is shared with anyone else, has a co-borrower | Yes |
+  | co_borrower | (boolean) is current custoner a co-borrower for another person | Yes |
+  | credit_limit | credit car limit | No |
+  | loan_amount | original loan amount | No |
+  | balance | current loan balance | No |
+  | charges | monthly payment charges/fees | No |
+  | charge_period | perios applicable for chargees. Should be always "MONTHLY" if present | No |
+  | type | loan type. Could be one of the following options only: **'credit_card', 'consumner_loan', 'charge_card'** | Yes |
+  | nominal_rate | nominal interest rate | No |
+  | current_balance | current loan balance, amount owned to the financial institution | Yes |
+  | balance_with_interest | balance used to calculate interest rate | Yes |
+  | balance_without_interest | balance with 0% nominal interest rate | Yes |
+  | terms | number of months for consumer loan | No |
+  | kid | unique identificator of payer for monthly payments | No |
+  | account | financial institution account number used to transfer money to | No |
+
 left_code_blocks:
   - code_block: |-
       $.ajax({
@@ -75,8 +98,65 @@ right_code_blocks:
             "balance_with_interest": 0.0,
             "balance_without_interest": 349.0,
             "terms": 59,
-            "kid": "016470713880",
+            "kid": "012345677899",
             "account": "42024603940"
+          },
+          {
+            "creditor_name": "RESURS BANK AB",
+            "creditor_org_number": 984150865,
+            "has_co_borrower": false,
+            "co_borrower": false,
+            "credit_limit": null,
+            "loan_amount": 10176.63,
+            "balance": 9842.06,
+            "charges": 45.0,
+            "charge_period": "monthly",
+            "type": "consumner_loan",
+            "nominal_rate": 6.17,
+            "current_balance": 9842.06,
+            "balance_with_interest": 0.0,
+            "balance_without_interest": 0.0,
+            "terms": 0.48,
+            "kid": null,
+            "account": '42026512345'
+          },
+          {
+            "creditor_name": "BB - TF BANK NORGE",
+            "creditor_org_number": 923194592,
+            "has_co_borrower": false,
+            "co_borrower": false,
+            "credit_limit": 30000.0,
+            "loan_amount": null,
+            "balance": null,
+            "charges": 0.0,
+            "charge_period": "monthly",
+            "type": "credit_card",
+            "nominal_rate": 19.9,
+            "current_balance": 0.0,
+            "balance_with_interest": 0.0,
+            "balance_without_interest": 0.0,
+            "terms": null,
+            "kid": null,
+            "account": null
+          },
+          {
+            "creditor_name": "AMERICAN EXPRESS EUROPE S A",
+            "creditor_org_number": 920854346,
+            "has_co_borrower": false,
+            "co_borrower": false,
+            "credit_limit": null,
+            "loan_amount": null,
+            "balance": null,
+            "charges": null,
+            "charge_period": null,
+            "type": "charge_card",
+            "nominal_rate": null,
+            "current_balance": 29118.06,
+            "balance_with_interest": 0.0,
+            "balance_without_interest": 29118.06,
+            "terms": null,
+            "kid": null,
+            "account": null
           }
         ],
         "user_data_id": 1

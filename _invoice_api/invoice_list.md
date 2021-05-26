@@ -13,7 +13,7 @@ content_markdown: |-
   By default shows all invoices for the User ID
   {: .info }
 
-  List all invoices from all banks (if user consent is given)
+  List all invoices from all banks (if user consent is given) sent to the consumer using efaktura
 
 left_code_blocks:
   - code_block: |-
@@ -22,6 +22,7 @@ left_code_blocks:
         "method": "GET",
         "headers": {
           "Content-Type": "application/json"
+          "Authorization": "Bearer <insert your token here>"
         },
       };
 
@@ -38,6 +39,7 @@ left_code_blocks:
       payload = {}
       headers = {
         'Content-Type': 'application/json'
+        'Authorization': 'Bearer <insert your token here>'
       }
 
       response = requests.request("GET", url, headers=headers, data = payload)
@@ -53,6 +55,7 @@ left_code_blocks:
         'url': 'https:/link.goscore.me/api/1.0/invoices/1',
         'headers': {
           'Content-Type': 'application/json'
+          'Authorization': 'Bearer <insert your token here>'
         }
       };
 
@@ -64,7 +67,7 @@ left_code_blocks:
     language: javascript
   - code_block: |-
       curl --location --request GET 'https:/link.goscore.me/api/1.0/invoices/1' \
-      --header 'Content-Type: application/json'
+      --header 'Content-Type: application/json' --header 'Authorization: Bearer <insert your token here>'
     title: Curl
     language: bash
 
