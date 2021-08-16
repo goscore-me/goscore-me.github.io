@@ -11,24 +11,25 @@ content_markdown: |-
 
   | Parameter | Description | Required? |
   |-------|--------|---------|
-  | sex | person's sex, Available options: **male, female** | Yes |
-  | ssn | ID- or D-number | Yes |
-  | kids | number of kids under 18 | Yes |
-  | status | DSF status | Yes |
-  | address | full person's address | Yes |
   | first_name | first name | Yes |
-  | last_name | last name | Yes |
-  | birth_date | birth date | Yes |
   | middle_name | middle name | No |
+  | last_name | last name | Yes |
+  | ssn | ID- or D-number | Yes |
+  | status | DSF status | Yes |
+  | birth_date | birth date | Yes |
+  | address | full person's address | Yes |
   | moving_date | current address change date | Yes |
   | citizenships | (array) all confirmed citizenships | Yes |
+  | norwegian_citizen | (boolean) does person have norwegian citizenship | Yes |
+  | norwegian_resident | (boolean) is person a norwegian resident | Yes |
+  | moved_to_norway_at | date of first moving in Norway | No |
+  | registered_residence | (boolean) person's residency is registered in DSF | Yes |
+  | sex | person's sex, Available options: **male, female** | Yes |
+  | kids | number of kids under 18 | Yes |
   | marital_status | public marital status. Available options: **married, registered_partner, divorced, separated, widow, single** NB: we're working on adding **cohabitant** status as well | Yes |
   | living_conditions | current living conditions based on the registtered address. Available options: **rental, parents, own, housing_association** | Yes |
-  | norwegian_citizen | (boolean) does person have norwegian citizenship | Yes |
-  | moved_to_norway_at | date of first moving in Norway | No |
-  | norwegian_resident | (boolean) is person a norwegian resident | Yes |
-  | registered_residence | (boolean) person's residency is registered in DSF | Yes |
-  | additional_info | **BETA** (dict, hash) additional information directly from the register | Yes |
+  | cohabitant | (boolean) has a registered partner | Yes |
+  | additional_info | **BETA** (dict, hash) additional information directly from the register | No |
 
 left_code_blocks:
   - code_block: |-
@@ -90,65 +91,28 @@ right_code_blocks:
   - code_block: |2-
       {
         "personal": {
-          "sex": "male",
-          "ssn": "01018012345",
-          "kids": 0,
-          "status": "bosatt",
-          "address": "BLEKENBERG 30, 5055 BERGEN",
-          "last_name": "NORDMANN",
-          "birth_date": "1980-01-01",
-          "first_name": "OLE",
+          "first_name": "OLA",
           "middle_name": null,
-          "moving_date": "2019-06-01",
+          "last_name": "NORDMANN",
+          "ssn": "01018012345",
+          "status": "bosatt",
+          "birth_date": "1980-01-01",
+          "address": "KONGENS GATE 1, 0123 OSLO",
+          "moving_date": "2016-06-01",
           "citizenships": [
-            "Norsk"
+              "Hviterussisk"
           ],
-          "marital_status": "single",
-          "additional_info": {
-            "cohabitant": false,
-            "some_additional_info": {
-              "konto": {
-                "iban": "",
-                "banknavn": "DNB ASA",
-                "kontonummer": "12345678901",
-                "bicEllerSwift": "",
-                "erUtbetalingskort": false
-              },
-              "person": {
-                "navn": "Ole Nordmann",
-                "spraak": "Bokmål",
-                "partsnummer": "123456789",
-                "foedselsnummer": "01018012345"
-              },
-              "kontakt": {
-                "epost": "ola.nordmann@gmail.com",
-                "telefon": "91234567"
-              },
-              "adresser": [
-                {
-                  "land": "",
-                  "type": "BOSTED",
-                  "poststed": "OSLO",
-                  "postnummer": "0153",
-                  "adressetekst": "KONGENS GATE 1",
-                  "registreringsdato": ""
-                }
-              ],
-              "arbeidsgivere": [
-                {
-                  "arbeidsgiver": "KONGEN AS",
-                  "hentetSkattekortDato": "2021-04-06"
-                }
-              ]
-            }
-          },
-          "living_conditions": "own",
           "norwegian_citizen": true,
-          "moved_to_norway_at": "1967-01-01",
           "norwegian_resident": true,
-          "registered_residence": true
+          "moved_to_norway_at": null,
+          "registered_residence": true,
+          "sex": "male",
+          "kids": 0,
+          "marital_status": "single",
+          "living_conditions": "rental",
+          "cohabitant": false
         },
-        "user_data_id": "1"
+        "user_data_id": "5c6985db-980b-4dba-a58e-c11faa5ea052"
       }
     title: Response
     language: json

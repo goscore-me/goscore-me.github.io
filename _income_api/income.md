@@ -112,13 +112,15 @@ right_code_blocks:
         "income": {
           "payslips": [
             {
-              "netto": 18000.0,
-              "end_date": null,
-              "laid_off": [],
+              "employer_org_num": "922707324",
               "fixed_wage": 22500.0,
-              "period_end": "2020-03-31",
-              "start_date": "2020-03-01",
               "hourly_wage": null,
+              "total_withholding_tax": -4500.0,
+              "total_payment": 22500.0,
+              "netto": 18000.0,
+              "payslip_type": "fixed",
+              "period_start": "2020-03-01",
+              "period_end": "2020-03-31",
               "income_rows": [
                 {
                   "type": "fixed",
@@ -128,13 +130,11 @@ right_code_blocks:
                   "benefit": "kontantytelse"
                 }
               ],
-              "payslip_type": "fixed",
-              "period_start": "2020-03-01",
-              "total_payment": 22500.0,
-              "position_amount": 60.0,
               "profession_code": "1317111",
-              "employer_org_num": "922707324",
-              "total_withholding_tax": -4500.0
+              "position_amount": 60.0,
+              "start_date": "2020-03-01",
+              "end_date": null,
+              "laid_off": [],
             }
           ],
           "employers": [
@@ -143,6 +143,8 @@ right_code_blocks:
               "public": false,
               "current": true,
               "org_num": "922707324",
+              "employment": "fixed_private",
+              "start_date": "2020-03-01",
               "end_date": null,
               "payslips": [
                 {
@@ -171,8 +173,6 @@ right_code_blocks:
                   "total_withholding_tax": -4500.0
                 }
               ],
-              "employment": "fixed_private",
-              "start_date": "2020-03-01",
               "company_profile": {
                 "id": "922707324",
                 "raw": {

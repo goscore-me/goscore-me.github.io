@@ -75,50 +75,18 @@ right_code_blocks:
   - code_block: |2-
       {
         "vehicles": {
-          "vehicle_information": [
-            ["DMC DeLorean", "OUTATIME"],
-            ["Mercedes C180 Kompressor", "HB60019"],
-          ],
-          "epost": "ole.nordmann@gmail.com",
-          "mobil": "91234567",
-          "fornavn": "OLE",
-          "malform": "Bokmal",
-          "adresser": [
-            {
-              "land": {
-                "landkode": "NOR",
-                "landnavn": "NORGE"
-              },
-              "kommune": {
-                "kommunenavn": "OSLO",
-                "kommunenummer": "1000"
-              },
-              "poststed": {
-                "poststed": "OSLO",
-                "postnummer": "0153"
-              },
-              "adresse_id": "123123123",
-              "adressetype": {
-                "kode": "BOSTEDSADRESSE",
-                "beskrivelse": "Bostedsadresse"
-              },
-              "adresselinje1": "KONGENS GATE 1",
-              "adresselinje2": null,
-              "adresselinje3": null
-            }
-          ],
-          "kunde_id": "123123123",
-          "etternavn": "NORDMANN",
-          "mellomnavn": null,
-          "fodselsdato": "1980-01-01T00:00:00.000+0100",
-          "fodselsnummer": "01018012345",
-          "spesialadresse": false,
-          "digital_postkasse": {
-            "reservert": false,
-            "leverandor": "DIGIPOST"
-          },
-        }
-        "user_data_id": "1"
+        "first_name": "OLA",
+        "middle_name": null,
+        "last_name": "NORDMANN",
+        "email": "ole.nordmann@gmail.com",
+        "digital_mailbox": "DIGIPOST",
+        "phone_number": "91234567",
+        "birth_date": "1980-01-01",
+        "vehicles": [
+          ["DMC DeLorean", "OUTATIME"],
+          ["Mercedes C180 Kompressor", "HB60019"]
+        ],
+        "vehicles_detailed": []
       }
     title: Response
     language: json
