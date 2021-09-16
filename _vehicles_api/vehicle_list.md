@@ -75,18 +75,21 @@ right_code_blocks:
   - code_block: |2-
       {
         "vehicles": {
-        "first_name": "OLA",
-        "middle_name": null,
-        "last_name": "NORDMANN",
-        "email": "ole.nordmann@gmail.com",
-        "digital_mailbox": "DIGIPOST",
-        "phone_number": "91234567",
-        "birth_date": "1980-01-01",
-        "vehicles": [
-          ["DMC DeLorean", "OUTATIME"],
-          ["Mercedes C180 Kompressor", "HB60019"]
-        ],
-        "vehicles_detailed": []
+          "first_name": "OLA",
+          "middle_name": null,
+          "last_name": "NORDMANN",
+          "email": "ole.nordmann@gmail.com",
+          "digital_mailbox": "DIGIPOST",
+          "phone_number": "91234567",
+          "birth_date": "1980-01-01",
+          "vehicles": [
+            ["DMC DeLorean", "OUTATIME"],
+            ["Mercedes C180 Kompressor", "HB60019"]
+          ],
+          "vehicles_detailed": []
+        }
+        "user_data_id": "5c6985db-980b-4dba-a58e-c11faa5ea052",
+        "status": "done"
       }
     title: Response
     language: json

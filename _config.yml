@@ -17,7 +17,7 @@ collections:
     title: Documentation
     position_number: 1
   api:
-    title: APIs
+    title: General
     position_number: 2
   loan_api:
     title: Loans
