@@ -19,7 +19,8 @@ content_markdown: |-
   | birth_date | birth date | Yes |
   | address | full person's address | Yes |
   | moving_date | current address change date | Yes |
-  | citizenships | (array) all confirmed citizenships | Yes |
+  | citizenships | (array) person's citizenship | Yes |
+  | citizenship_country_codes | (array) person's citizenship in ISO 3-digit format | Yes |
   | norwegian_citizen | (boolean) does person have norwegian citizenship | Yes |
   | norwegian_resident | (boolean) is person a norwegian resident | Yes |
   | moved_to_norway_at | date of first moving in Norway | No |
@@ -100,7 +101,10 @@ right_code_blocks:
           "address": "KONGENS GATE 1, 0123 OSLO",
           "moving_date": "2016-06-01",
           "citizenships": [
-              "Hviterussisk"
+              "Norsk"
+          ],
+          "citizenship_country_codes": [
+              "NOR"
           ],
           "norwegian_citizen": true,
           "norwegian_resident": true,
