@@ -83,10 +83,89 @@ right_code_blocks:
           "phone_number": "91234567",
           "birth_date": "1980-01-01",
           "vehicles": [
-            ["DMC DeLorean", "OUTATIME"],
-            ["Mercedes C180 Kompressor", "HB60019"]
+            ["DMC DeLorean (1967)", "OUTATIME"],
+            ["Mercedes C180 Kompressor (2019)", "UR 10000"]
           ],
-          "vehicles_detailed": []
+          "vehicles_detailed": [
+              {
+                "model_name": "Mercedes-Benz C300",
+                "type": "personal_car",
+                "type_code": "M1",
+                "year": 2019,
+                "plate_number": "UR 10000",
+                "electric": false,
+                "hybrid": false,
+                "last_eu_control": "2019-11-08",
+                "next_eu_control": "2021-11-08",
+                "owned": true,
+                "co_owned": false,
+                "co_ownership": {
+                  "name": "",
+                  "address": null
+                },
+                "leased": false,
+                "leasing": {
+                  "name": "",
+                  "address": null
+                },
+                "technical_details": {
+                  "emissions": {
+                    "environmental_class": "5L",
+                    "engines": [
+                      {
+                        "co2": 139,
+                        "nox": 135.8
+                      }
+                    ]
+                  },
+                  "engines": [
+                    {
+                      "type": "diesel",
+                      "volume": 1968
+                    }
+                  ]
+                }
+              },
+              {
+                "model_name": "DeLorean",
+                "type": "atv",
+                "type_code": "MR",
+                "year": 1967,
+                "plate_number": "OUTATIME",
+                "electric": false,
+                "hybrid": false,
+                "last_eu_control": null,
+                "next_eu_control": null,
+                "owned": true,
+                "co_owned": false,
+                "co_ownership": {
+                  "name": "",
+                  "address": null
+                },
+                "leased": false,
+                "leasing": {
+                  "name": "",
+                  "address": null
+                },
+                "technical_details": {
+                  "emissions": {
+                    "environmental_class": null,
+                    "engines": [
+                      {
+                        "co2": null,
+                        "nox": null
+                      }
+                    ]
+                  },
+                  "engines": [
+                    {
+                      "type": "petrol",
+                      "volume": 280
+                    }
+                  ]
+                }
+              }
+            ]
         }
         "user_data_id": "5c6985db-980b-4dba-a58e-c11faa5ea052",
         "status": "done"
