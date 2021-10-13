@@ -30,9 +30,9 @@ content_markdown: |-
 
   #### Response
 
-  When the gotrack process is done, you will get a response with the result. This will either be a success, error or a status (status available in iframe mode only) and will be delivered to the specified callback_url. Based on your integration of gotrack, the response will be delivered using on of the following means:
+  When the gotrack process is done, you will get a response with the result. This will either be a success, error or a status (status available in iframe mode only) and will be delivered to the specified callback_uri. Based on your integration of gotrack, the response will be delivered using on of the following means:
 
-  * Redirect integration - the response will be sent using query parameters to the specified callback_url.
+  * Redirect integration - the response will be sent using query parameters to the specified callback_uri.
   * Iframe integration - the response will be sent to the parent window using a postMessage notification.
 
 left_code_blocks:
