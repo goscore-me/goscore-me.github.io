@@ -5,7 +5,7 @@ parameters:
   - name:
     content:
 content_markdown: |-
-  If you integrate goscore Link directly in your application via an iframe (this mode is available for verified developers only), the result will be delivered as stringified object via [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) to the parent window.
+  If you integrate gotrack directly in your application via an iframe (this mode is available for verified developers only), the result will be delivered as stringified object via [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) to the parent window.
 
 left_code_blocks:
   - code_block:

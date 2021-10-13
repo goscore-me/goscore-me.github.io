@@ -11,7 +11,7 @@ headers:
 content_markdown: |-
   You need to be authenticated to make API calls. Please, reach out to us to get credentials to try APIs.
 
-  You can generate a token using this request. When you get the token, access the relevant data with the consent code/ID saved you got after the goscore Link process successfully completed.
+  You can generate a token using this request. When you get the token, access the relevant data with the consent code/ID saved you got after the gotrack process successfully completed.
 
   Please, keep in mind that token is valid for a limited time
   {: .info }

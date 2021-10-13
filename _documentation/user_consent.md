@@ -1,22 +1,22 @@
 ---
-title: Collect Data with goscore Link
+title: Collect Data with gotrack
 position_number: 4
 parameters:
   - name:
     content:
 content_markdown: |-
-  API customers can get access to the goscore API by using the goscore Link web-app, which uses industry standard OAuth2 authentication methods for transparent and secure access to user data.
+  API customers can get access to the goscore API by using the gotrack web-app, which uses industry standard OAuth2 authentication methods for transparent and secure access to user data.
 
-  #### This is how goscore Link works:
+  #### This is how gotrack works:
 
-  1. User is taken to [https://link.goscore.me]()
+  1. User is taken to [https://theia.goscore.me]()
   2. User select the authentication method, e.g. BankID
   3. An user identificator (ID) (used to retrieve data) is sent back to the application
   4. With the ID together with API access_token, your application can fetch the user's data from the goscore API.
 
   #### Initialization parameters
 
-  You need an authorization link to be able to send users to goscore Link and this link can be customized with different parameters.
+  You need an authorization link to be able to send users to gotrack and this link can be customized with different parameters.
 
   | Parameter | Description | Required? |
   |-------|--------|---------|
@@ -30,7 +30,7 @@ content_markdown: |-
 
   #### Response
 
-  When the goscore Link process is done, you will get a response with the result. This will either be a success, error or a status (status available in iframe mode only) and will be delivered to the specified callback_url. Based on your integration of goscore Link, the response will be delivered using on of the following means:
+  When the gotrack process is done, you will get a response with the result. This will either be a success, error or a status (status available in iframe mode only) and will be delivered to the specified callback_url. Based on your integration of gotrack, the response will be delivered using on of the following means:
 
   * Redirect integration - the response will be sent using query parameters to the specified callback_url.
   * Iframe integration - the response will be sent to the parent window using a postMessage notification.
