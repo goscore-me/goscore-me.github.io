@@ -13,7 +13,7 @@ content_markdown: |-
   |-------|--------|---------|
   | vehicle_information | (array) list of the registered vehicles with plate numbers. First value is a vehicle name, second - plate number | No |
 
-  **NB!** Addional information is presented as is and isn't preprocessed. Please, consider that future changes in the schema will apply.
+  **NB!** Additional information in `vehicles_detailed` might be missing in some cases.
 
 left_code_blocks:
   - code_block: |-
