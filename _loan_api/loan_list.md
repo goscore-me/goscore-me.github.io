@@ -13,7 +13,7 @@ content_markdown: |-
   By default shows all loans for the User ID
   {: .info }
 
-  Lists all the unsecured loans collected for the selected User ID. Read more above about how to get a valid token.
+  Lists all the unsecured loans and student loan from Lånekassen collected for the selected User ID. Read more above about how to get a valid token.
 
   #### Loan object parameters
 
@@ -36,6 +36,18 @@ content_markdown: |-
   | terms | number of months for consumer loan | No |
   | kid | unique identificator of payer for monthly payments | No |
   | account | financial institution account number used to transfer money to | No |
+
+  #### Student loan object parameters
+  If the applicant isn't customer at Lånekassen (never applied to get a loan), the response would be a blank hash `"student_loan": {}`
+  {: .info }
+
+  | Parameter | Description | Required? |
+  |-------|--------|---------|
+  | balance | current loan balance | No |
+  | fees | current fees calculated | No |
+  | charges | additional fees charged | No |
+  | interest | interest calculated (in kr) | No |
+  | status | data collection status. If data is available, the following statuses could be shown: `ok`, if the data was collected and available or `moved_to_debt_collection`, if the loan was permanently transferred to Statens Innkrevingssentral and data isn't available at Lånekassen anymore | No |
 
 left_code_blocks:
   - code_block: |-
@@ -159,6 +171,13 @@ right_code_blocks:
             "account": null
           }
         ],
+        "student_loan": {
+          "balance":367914.67,
+          "fees":7910.0,
+          "charges":0.0,
+          "interest":39456.67,
+          "status":"ok"
+        },
         "user_data_id": "5c6985db-980b-4dba-a58e-c11faa5ea052",
         "status": "done"
       }
