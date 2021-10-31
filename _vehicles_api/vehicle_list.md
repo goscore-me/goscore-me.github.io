@@ -78,7 +78,7 @@ right_code_blocks:
           "first_name": "OLA",
           "middle_name": null,
           "last_name": "NORDMANN",
-          "email": "ole.nordmann@gmail.com",
+          "email": "ola.nordmann@gmail.com",
           "digital_mailbox": "DIGIPOST",
           "phone_number": "91234567",
           "birth_date": "1980-01-01",
@@ -98,6 +98,17 @@ right_code_blocks:
                 "last_eu_control": "2019-11-08",
                 "next_eu_control": "2021-11-08",
                 "owned": true,
+                "owner": {
+                  "name": "Ola Nordmann",
+                  "address": {
+                    "land": "Norge",
+                    "poststed": "Oslo",
+                    "postnummer": "0123",
+                    "adresselinje1": "Kongens gate 1",
+                    "adresselinje2": null,
+                    "adresselinje3": null
+                  }
+                },
                 "co_owned": false,
                 "co_ownership": {
                   "name": "",
@@ -137,6 +148,17 @@ right_code_blocks:
                 "last_eu_control": null,
                 "next_eu_control": null,
                 "owned": true,
+                "owner": {
+                  "name": "Ola Nordmann",
+                  "address": {
+                    "land": "Norge",
+                    "poststed": "Oslo",
+                    "postnummer": "0123",
+                    "adresselinje1": "Kongens gate 1",
+                    "adresselinje2": null,
+                    "adresselinje3": null
+                  }
+                },
                 "co_owned": false,
                 "co_ownership": {
                   "name": "",

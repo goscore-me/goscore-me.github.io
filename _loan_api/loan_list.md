@@ -47,7 +47,8 @@ content_markdown: |-
   | fees | current fees calculated | No |
   | charges | additional fees charged | No |
   | interest | interest calculated (in kr) | No |
-  | status | data collection status. If data is available, the following statuses could be shown: `ok`, if the data was collected and available or `moved_to_debt_collection`, if the loan was permanently transferred to Statens Innkrevingssentral and data isn't available at Lånekassen anymore | No |
+  | status | data collection status. If data is available, it returns `ok`, and if data isn't available at Lånekassen anymore, you get `unavailable` | No |
+  | status_reason | Only if data isn't available. The following statuses could be returned: `moved_to_debt_collection`, if the loan was permanently transferred to Statens Innkrevingssentral, `terminated` if loan is discarded, `debt_settlement` if debt settlement process initiated, or `unrecognized` if the reason isn't available | No |
 
 left_code_blocks:
   - code_block: |-
