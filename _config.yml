@@ -19,21 +19,24 @@ collections:
   api:
     title: General
     position_number: 2
+  loan_application_api:
+    title: Loan application
+    position_number: 3
   loan_api:
     title: Loans
-    position_number: 3
+    position_number: 4
   invoice_api:
     title: Invoices
-    position_number: 4
+    position_number: 5
   private_api:
     title: User info
-    position_number: 5
+    position_number: 6
   income_api:
     title: Income / employemnt
-    position_number: 6
+    position_number: 7
   vehicles_api:
     title: Vehicles
-    position_number: 7
+    position_number: 8
 
 plugins:
   - jekyll-sitemap

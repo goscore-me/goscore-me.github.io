@@ -5,7 +5,7 @@ parameters:
   - name:
     content:
 content_markdown: |-
-  Last updated: **15.12.2021**
+  Last updated: **11.02.2022**
 
   Welcome to goscore API! Here you’ll find up-to-date information for integrating with our data collection solution. If you have any questions, please don't hesitate to <a href="mailto:support@goscore.me">drop us a line</a>.
 
