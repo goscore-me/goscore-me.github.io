@@ -38,6 +38,7 @@ content_markdown: |-
   | callback_uri | redirect URL. This is the path that will receive the code. | No |
   | test | indicate if test flow is enabled (static data) | No |
   | styles_uri | URL for your custom CSS file. It overwrites standard styles. Doesn't apply to an alternative flow | No |
+  | tax_entities | For the `tax_data_pdf` scope only. Set comma-separated organizational numbers to collect data from correspondent mailbox | No |
 
   #### Response
 
