@@ -15,6 +15,8 @@ content_markdown: |-
 
   List all invoices from all banks (if user consent is given) sent to the consumer using efaktura
 
+  **Scope:** e_invoices
+
 left_code_blocks:
   - code_block: |-
       var settings = {

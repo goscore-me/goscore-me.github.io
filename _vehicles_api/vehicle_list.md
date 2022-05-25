@@ -7,6 +7,8 @@ content_markdown: |-
 
   List all vehicles registered on the costumer name from Statens Vegvesen
 
+  **Scope:** vehicles
+
   #### Vehicle information object parameters
 
   | Parameter | Description | Required? |

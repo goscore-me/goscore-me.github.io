@@ -10,6 +10,7 @@ content_markdown: |-
   Collect a complete loan application dataset in the same format as a separated API responses below.
   Check the APIs below for a detailed descriptions of the data models.
 
+  **Scope:** any
   
 left_code_blocks:
   - code_block: |-
@@ -70,26 +71,49 @@ right_code_blocks:
         "tax_documents": {
           "personal": {
             "tax_reports": [
-              "data:application/pdf;base64,...",
-              "data:application/pdf;base64,...",
+              {
+                "subject": "Skattemeldingen 2017",
+                "filename": "Skattemelding 2017.pdf",
+                "content": "data:application/pdf;base64,..."
+              }
             ],
             "detailed_shares_data": [
-              "data:application/pdf;base64,...",
+              {
+                "subject": "Detaljert Aksjeoppgave for 2021",
+                "filename": "RF-1088D Detaljert.pdf",
+                "content": "data:application/pdf;base64,..."
+              }
             ],
             "business_assignment": [
-              "data:application/pdf;base64,...",
+              {
+                "subject": "Næringsoppgave 2017",
+                "filename": "Næringsoppgave 2 2017.pdf",
+                "content": "data:application/pdf;base64,..."
+              }
             ]
           },
           "corporate": {
             "<org_number>": {
               "latest_tax_report": [
-                "data:application/pdf;base64,..."
+                {
+                  "subject": "Skattemeldingen 2017",
+                  "filename": "Skattemelding 2017.pdf",
+                  "content": "data:application/pdf;base64,..."
+                }
               ],
               "latest_annual_report": [
-                "data:application/pdf;base64,..."
+                {
+                  "subject": "Detaljert Aksjeoppgave for 2021",
+                  "filename": "RF-1088D Detaljert.pdf",
+                  "content": "data:application/pdf;base64,..."
+                }
               ],
               "latest_shareholders_report": [
-                "data:application/pdf;base64,..."
+                {
+                  "subject": "Næringsoppgave 2017",
+                  "filename": "Næringsoppgave 2 2017.pdf",
+                  "content": "data:application/pdf;base64,..."
+                }
               ]
             }
           }

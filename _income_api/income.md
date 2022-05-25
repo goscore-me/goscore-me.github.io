@@ -6,6 +6,8 @@ description: Beta
 content_markdown: |-
   Customer income and employemnt information from a-meldinger (Skatteetaten)
 
+  **Scope:** income
+
   #### Payslip object parameters
 
   | Parameter | Description | Required? |

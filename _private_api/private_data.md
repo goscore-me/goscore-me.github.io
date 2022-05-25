@@ -7,6 +7,8 @@ description: Beta
 content_markdown: |-
   Show personal customer data populated from the Folkeregisteret
 
+  **Scope:** info
+
   #### Personal object parameters
 
   | Parameter | Description | Required? |

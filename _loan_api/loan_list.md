@@ -15,6 +15,8 @@ content_markdown: |-
 
   Lists all the unsecured loans and student loan from Lånekassen collected for the selected User ID. Read more above about how to get a valid token.
 
+  **Scope:** unsecured_loans, student_loan
+
   #### Loan object parameters
 
   | Parameter | Description | Required? |
