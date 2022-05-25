@@ -24,6 +24,9 @@ content_markdown: |-
   | partially_done | Data is partially collected and available for retrieval |
   | error | Data wasn't collected because of an error |
 
+  Please, note, that done, partially_done, and error are final statuses and wouldn't be updated at any time. 
+  {: .info }
+
 left_code_blocks:
   - code_block:
     title:

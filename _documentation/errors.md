@@ -12,10 +12,11 @@ content_markdown: |-
   | **INTERNAL_ERROR** | An internal error within the goscore service. Please contact <a href="mailto:support@goscore.me">support</a> for help. |
   | **TEMPORARY_ERROR** | A temporary error with the 3rd party services. Please try again. |
 
-  All errors will return JSON in the following format:
+  All errors will return JSON in the following format (example below):
 left_code_blocks:
   - code_block: |-
       {
+        "type": "error",
         "error": {
           "status": "BAD_REQUEST",
           "message": "The gotrack URL was incorrectly configured."
